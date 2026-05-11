@@ -1,0 +1,10 @@
+tensorflow>=2.10.0
+opencv-python
+numpy
+#tensorflow: This is the heavy lifter. It includes Keras (used for models.Sequential and load_model) and the underlying math engine for your neural network.
+
+#Note: If you have an NVIDIA GPU and want faster inference, use tensorflow-gpu (for older versions) or ensure your CUDA drivers are set up for standard tensorflow 2.x.
+
+#opencv-python: Provides the cv2 module used for accessing your webcam, Haar Cascade face detection, image resizing, and the GUI window.
+
+#numpy: Used for array manipulation, specifically when you use np.expand_dims and np.argmax to format the image data for the model's input layer.
